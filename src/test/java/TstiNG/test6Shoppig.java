@@ -39,6 +39,7 @@ test6Shoppig extends CommonClassForT5{
               String Ssrate=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Srate))).getText();
               int rate=Integer.parseInt(Ssrate.replaceAll("[^0-9]", ""));
               ss.put(name,rate);
+
           }
 
         }
