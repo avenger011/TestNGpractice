@@ -20,8 +20,9 @@ public class  login {
 
     public void part1(String user,String pas)
     {
-          WaitHelper w=new WaitHelper();
-          w.VisibleWait(driver,NameV,10);
+          WaitHelper waitHelper=new WaitHelper();
+          waitHelper.VisibleWait(driver,NameV,10);
+          //VisibleWait(driver,NameV,10);
           driver.findElement(NameV).sendKeys("");        //--------------->
           driver.findElement(PassV).sendKeys("");
           driver.findElement(Submit).click();

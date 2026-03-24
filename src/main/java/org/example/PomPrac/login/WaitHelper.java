@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class WaitHelper {
 
-    public static void VisibleWait(WebDriver driver, By ele, int time){
+    public  void VisibleWait(WebDriver driver, By ele, int time){
 
         WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time));
         wait.until(ExpectedConditions.visibilityOfElementLocated(ele));
